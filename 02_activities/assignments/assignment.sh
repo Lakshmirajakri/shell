@@ -31,9 +31,9 @@ ls data/raw
 
 
 # 4. In ./data/processed, create the following directories: server_logs, user_logs, and event_logs
-cd data
-mkdir processed
+mkdir .data/processed/
 cd processed
+mkdir server_logs user_logs events_logs
 
 
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs
@@ -48,9 +48,8 @@ cp .log* event_logs/
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
 
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
-cd data
-cd processed
-touch .. inventory.txt
+
+touch ./data/inventory.txt/
 
 
 ###########################################
